@@ -8,6 +8,7 @@ class Prototype < ApplicationRecord
     validates :catch_copy
     validates :concept
     validates :image
+    validates :text
     
   end
   
