@@ -3,8 +3,8 @@ class PrototypesController < ApplicationController
   before_action :move_to_index, only: [:edit]
 
   def index
-    @prototypes =Prototype.all
-  
+    @prototypes = Prototype.includes(:user)
+    #@prototypes = Prototype.all
   end
 
   def new
